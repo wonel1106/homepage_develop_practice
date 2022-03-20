@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+/* 초기화 */
+
+*{margin: 0; padding: 0;}
+a {text-decoration: none !important;}
+img {border: 0;}
+ul {list-style: none;}
+
+header, footer, section {
+    box-sizing: border-box;
+}
+
+/* header */
+
+.main_header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1024px;
+    margin: 0 auto;
+}
+
+.main_header_nav {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0;
+    text-align: center;
+}
+
+.logo {
+    float: left;
+    text-align: left;
+    padding: 6px 0 0 20px;
+}
+
+.logo a {
+    display: inline-block;
+}
+
+.logo_img {
+    width: 44px;
+}
+
+img{
+    max-width: 100%;
+    height: 100%;
+    vertical-align: top;
+    border: none;
+}
+
+.top_menu{
+    display: inline-block;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    vertical-align: top;
+}
+
+.top_menu > ul {
+    display: inline-block;
+    font-size: 0;
+}
+
+.top_menu > ul > li{
+    display: inline-block;
+    padding: 10px 0 14px;
+}
+
+.top_menu > ul > li > a {
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 0 17px;
+}
+
+.menu_name {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #000;
+}
+
+.top_linkArea {
+    float: right;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.linkSearch_area {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.linkSearch-btn {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 52px;
+    height: 54px;
+    border-right: 1px solid ;
+    border-left: 1px solid ;
+    background-image: url(./image/searchGray_btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.linkSocial {
+    display: inline-block;
+    padding: 0 2px 0 4px;
+}
+
+.linkSocial > li {
+    display: inline-block;
+}
+
+.linkSocial_youtube > a {
+    background: url(./image/linkSocial_youtube_lg.png);
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+    width: 28px;
+    height: 55px;
+}
+
+.linkLang {
+    display: inline-block;
+    position: relative;
+    font-size: 0;
+    vertical-align: top;
+}
+
+.linkLang > a {
+    display: inline-block;
+    padding: 22px 29px 22px 13px;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: 'Do Hyeon', sans-serif;
+    line-height: 11px;
+    letter-spacing: 1.5px;
+    color: #333;
+}
+
+.linkFamily {
+    display: inline-block;
+    position: relative;
+}
+
+.linkFamily > a {
+    display: inline-block;
+    padding: 22px 25px 22px 13px;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: 'Do Hyeon', sans-serif;
+    line-height: 11px;
+}
+
+
+@media only screen and (min-width: 0) and (max-width: 1023px){
+    .main_header {
+        height: 45px;
+        max-width: 100%;
+        min-width: 320px;
+    }
+
+    .layout_topMobile_btn {
+        position: absolute;
+        top: 0;
+        left: 0.1vw;
+        width: 50px;
+        height: 45px;
+        background: url(./image/topMenu_Btn.png) no-repeat;
+        background-size: 21px 16px;
+        background-position: center;
+    }
+
+    .logo {
+        float: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .logo a {
+        padding: 6px 10px 11px;
+    }
+
+    .logo_img {
+        width: 35px;
+    }
+
+    .top_menu {
+        display: none;
+    }
+
+    .top_linkArea {
+        display: none;
+    }
+
+    .layout_topMobileFamily_btn {
+        position: absolute;
+        top: 0%;
+        right: 0vw;
+        width: 50px;
+        height: 45px;
+        background: url(./image/topFamily_Btn.png) no-repeat;
+        background-size: 20px 23px;
+        background-position: center;
+    }
+}
+
+
+@media only screen and (min-width: 0) and (max-width:1199px){
+    
+    .main_header {
+        max-width: 100%;
+        min-width: 320px;
+    }
+
+    .main_header_nav {
+        max-width: 100%;
+        min-width: 320px;
+    }
+
+    .top_menu {
+        display: none;
+    }
+
+    .top_linkArea {
+        display: none; 
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px){
+    
+    .layout_topMobile_btn {
+        position: absolute;
+        top: 23%;
+        left: 3%;
+        width: 30px;
+        height: 30px;
+        background: url(./image/topMenu_Btn.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .logo {
+        float: none;
+        padding: 10px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .layout_topMobileFamily_btn {
+        position: absolute;
+        top: 22%;
+        right: 3%;
+        width: 30px;
+        height: 32px;
+        background: url(./image/topFamily_Btn.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+@media all and (min-width:1200px){
+    
+    .logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
